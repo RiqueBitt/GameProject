@@ -1,0 +1,89 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://player.gd" id="1_player"]
+[ext_resource type="PackedScene" path="res://hud.tscn" id="2_hud"]
+
+[sub_resource type="ProceduralSkyMaterial" id="sky_mat"]
+sky_top_color = Color(0.2, 0.22, 0.55, 1)
+sky_horizon_color = Color(0.72, 0.68, 0.95, 1)
+ground_bottom_color = Color(0.08, 0.08, 0.12, 1)
+ground_horizon_color = Color(0.72, 0.68, 0.95, 1)
+
+[sub_resource type="Sky" id="sky"]
+sky_material = SubResource("sky_mat")
+
+[sub_resource type="Environment" id="env"]
+background_mode = 2
+sky = SubResource("sky")
+ambient_light_source = 3
+tonemap_mode = 2
+
+[sub_resource type="StandardMaterial3D" id="mat_ground"]
+albedo_color = Color(0.16, 0.17, 0.24, 1)
+
+[sub_resource type="PlaneMesh" id="ground"]
+material = SubResource("mat_ground")
+size = Vector2(24, 24)
+
+[sub_resource type="StandardMaterial3D" id="mat_player"]
+albedo_color = Color(0.506, 0.549, 0.973, 1)
+roughness = 0.35
+
+[sub_resource type="CapsuleMesh" id="capsule"]
+material = SubResource("mat_player")
+
+[sub_resource type="StandardMaterial3D" id="mat_box"]
+albedo_color = Color(0.98, 0.6, 0.25, 1)
+
+[sub_resource type="BoxMesh" id="box"]
+material = SubResource("mat_box")
+
+[sub_resource type="StandardMaterial3D" id="mat_gem"]
+albedo_color = Color(0.3, 0.9, 0.6, 1)
+emission_enabled = true
+emission = Color(0.2, 0.8, 0.5, 1)
+
+[sub_resource type="PrismMesh" id="gem"]
+material = SubResource("mat_gem")
+size = Vector3(0.6, 0.8, 0.6)
+
+[node name="Main" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("env")
+
+[node name="Sol" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.866, -0.354, 0.354, 0, 0.707, 0.707, -0.5, -0.612, 0.612, 0, 6, 0)
+shadow_enabled = true
+
+[node name="Chao" type="MeshInstance3D" parent="."]
+mesh = SubResource("ground")
+
+[node name="Jogador" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("capsule")
+script = ExtResource("1_player")
+
+[node name="Caixas" type="Node3D" parent="."]
+
+[node name="Caixa1" type="MeshInstance3D" parent="Caixas"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.5, -2)
+mesh = SubResource("box")
+
+[node name="Caixa2" type="MeshInstance3D" parent="Caixas"]
+transform = Transform3D(0.8, 0, 0.6, 0, 1, 0, -0.6, 0, 0.8, -3, 0.5, -1)
+mesh = SubResource("box")
+
+[node name="Caixa3" type="MeshInstance3D" parent="Caixas"]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 1.5, 0.75, -4.5)
+mesh = SubResource("box")
+
+[node name="Gema" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 1.2, 2)
+mesh = SubResource("gem")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.906, 0.423, 0, -0.423, 0.906, 0, 4.5, 8.5)
+current = true
+
+[node name="HUD" parent="." instance=ExtResource("2_hud")]

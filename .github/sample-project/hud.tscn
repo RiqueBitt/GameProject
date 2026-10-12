@@ -1,0 +1,24 @@
+[gd_scene format=3]
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="Painel" type="PanelContainer" parent="."]
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 284.0
+offset_bottom = 96.0
+
+[node name="Linhas" type="VBoxContainer" parent="Painel"]
+layout_mode = 2
+
+[node name="Titulo" type="Label" parent="Painel/Linhas"]
+layout_mode = 2
+text = "Jogo de Exemplo"
+
+[node name="Pontos" type="Label" parent="Painel/Linhas"]
+layout_mode = 2
+text = "Pontos: 0"
+
+[node name="Vida" type="ProgressBar" parent="Painel/Linhas"]
+layout_mode = 2
+value = 75.0

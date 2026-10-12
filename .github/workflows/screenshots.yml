@@ -1,0 +1,60 @@
+name: Capturas de tela (GameProject)
+
+# Roda só as capturas de tela, usando o GameProject.AppImage de uma compilação
+# anterior (run_id do "Build GameProject release"). Útil para refazer as capturas
+# sem recompilar. As imagens vão para o ramo 'capturas'.
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: 'ID da execução do "Build GameProject release" que tem o AppImage'
+        required: true
+      version:
+        description: 'Versão (só para a mensagem do commit)'
+        default: '1.0.0'
+
+jobs:
+  screenshots:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github
+      - uses: actions/download-artifact@v4
+        with:
+          name: gameproject-linux
+          path: app
+          run-id: ${{ inputs.run_id }}
+          github-token: ${{ github.token }}
+      - name: Dependências para rodar e capturar
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq xvfb xdotool imagemagick openbox libgl1-mesa-dri libglx-mesa0 libegl1 libxi6 libxcursor1 libxinerama1 libxrandr2 libxkbcommon0 libasound2 libpulse0 libfuse2 fonts-noto-core language-pack-pt
+      - name: Rodar o GameProject e capturar telas
+        run: |
+          mkdir -p shots
+          rc=0
+          bash .github/scripts/screenshots.sh app/GameProject.AppImage shots > shots/run.log 2>&1 || rc=$?
+          cat shots/run.log
+          exit $rc
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gameproject-screenshots
+          path: shots/
+      - name: Guardar capturas no ramo 'capturas'
+        if: always()
+        run: |
+          cd shots
+          git init -q -b capturas
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Capturas de tela ${{ inputs.version }} (run ${{ github.run_id }})"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" capturas
+

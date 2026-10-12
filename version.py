@@ -1,0 +1,9 @@
+short_name = "godot"
+name = "GameProject"
+major = 4
+minor = 8
+patch = 0
+status = "dev"
+module_config = ""
+website = "https://projectclub.squareweb.app"
+docs = "latest"
