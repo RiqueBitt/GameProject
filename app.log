@@ -1,0 +1,281 @@
+GameProject v4.8.dev.custom_build.8180d5847 (2026-10-12 12:01:27 UTC) - https://projectclub.squareweb.app
+WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.
+     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:372)
+OpenGL API 4.5 (Core Profile) Mesa 23.2.1-1ubuntu3.1~22.04.4 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 15.0.7, 256 bits)
+ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1334:(snd_func_refer) error evaluating name
+ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5705:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2664:(snd_pcm_open_noupdate) Unknown PCM default
+ERROR: Condition "status < 0" is true. Returning: ERR_CANT_OPEN
+   at: init_output_device (drivers/alsa/audio_driver_alsa.cpp:97)
+WARNING: All audio drivers failed, falling back to the dummy driver.
+     at: initialize (servers/audio/audio_driver.cpp:244)
+
+ERROR: Required Vulkan instance extension VK_KHR_surface not found.
+   at: _initialize_instance_extensions (drivers/vulkan/rendering_context_driver_vulkan.cpp:494)
+ERROR: Condition "err != OK" is true. Returning: err
+   at: initialize (drivers/vulkan/rendering_context_driver_vulkan.cpp:915)
+GameProject v4.8.dev.custom_build.8180d5847 (2026-10-12 12:01:27 UTC) - https://projectclub.squareweb.app
+WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.
+     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:372)
+OpenGL API 4.5 (Core Profile) Mesa 23.2.1-1ubuntu3.1~22.04.4 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 15.0.7, 256 bits)
+ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1334:(snd_func_refer) error evaluating name
+ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5705:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2664:(snd_pcm_open_noupdate) Unknown PCM default
+ERROR: Condition "status < 0" is true. Returning: ERR_CANT_OPEN
+   at: init_output_device (drivers/alsa/audio_driver_alsa.cpp:97)
+WARNING: All audio drivers failed, falling back to the dummy driver.
+     at: initialize (servers/audio/audio_driver.cpp:244)
+
+X connection to :99 broken (explicit kill or server shutdown).
+ERROR: BUG: Unreferenced static string to 0: _get_editor_name
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _is_read_only
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: servers
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _skip_save_
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: blender/animation/group_tracks
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: blender/animation/always_sample
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: blender/animation/limit_playback
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: blender/materials/export_materials
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: blender/materials/unpack_enabled
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: blender/meshes/export_bones_deforming_mesh_only
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: blender/meshes/skins
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: blender/meshes/tangents
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: blender/meshes/gpu_instances
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: blender/meshes/export_geometry_nodes_instances
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: blender/meshes/normals
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: blender/meshes/uvs
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: blender/meshes/vertex_colors
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: blender/nodes/modifiers
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: blender/nodes/custom_properties
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: blender/nodes/cameras
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: blender/nodes/punctual_lights
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: blender/nodes/active_collection_only
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: blender/nodes/visible
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: default_length
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: bone_angle
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _compression
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _editor_region_rect_enabled
+   at: unref (core/string/string_name.cpp:133)
+ERROR: Pages in use exist at exit in PagedAllocator: N10StringName5_DataE
+   at: ~PagedAllocator (./core/templates/paged_allocator.h:170)
+ERROR: BUG: Unreferenced static string to 0: head
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: editor_settings/show_bone_gizmo
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: auto_calculate_length_and_angle
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: markers
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _can_be_hidden
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _create_gizmo
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _is_handle_highlighted
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _redraw
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _set_read_only
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _parse_end
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _parse_group
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _parse_category
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _parse_begin
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _should_update_export_options
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _get_export_options
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _can_generate_small_preview
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _generate_small_preview_automatically
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _generate_from_path
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _update_layout
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _save_layout_to_config
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _update_layout_and_slot
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _get_import_options
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _run_scene
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _build
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _get_window_layout
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _get_breakpoints
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _save_external_data
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _get_unsaved_status
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _clear
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _handles
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _has_main_screen
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _get_plugin_name
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _forward_3d_draw_over_viewport
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _forward_canvas_draw_over_viewport
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _update_cells
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _get_saveable_image_formats
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _export_get_property_list
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _get_draw_rect
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _create_mesh_array
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _has_filter
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _update_cache
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _clear_highlighting_cache
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _get_line_syntax_highlighting
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _value_changed
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _toggled
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _pressed
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _gui_input
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _get_cursor_shape
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _get_minimum_size
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _get_maximum_size
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _has_point
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _get_contents_minimum_size
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _is_refusing_new_connections
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _can_use_render_priority
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _can_do_next_pass
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _draw_rect
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _draw
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _get_anchor_detection_is_enabled
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _get_play_area_mode
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _get_formats
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _shaped_text_closest_character_pos
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _shaped_text_draw_outline
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _shaped_text_draw
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _shaped_text_hit_test_position
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _shaped_text_get_selection
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _shaped_text_get_carets
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _shaped_text_get_dominant_direction_in_range
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _shaped_text_get_line_breaks
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _get_message
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _get_plural_message
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _initialize
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _recognize
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _exists
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _get_dependencies
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _get_resource_uid
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _get_resource_script_class
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _recognize_path
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _get_recognized_extensions
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _set_path_cache
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: _reset_state
+   at: unref (core/string/string_name.cpp:133)
+ERROR: Pages in use exist at exit in PagedAllocator: N12VariantPools11BucketLargeE
+   at: ~PagedAllocator (./core/templates/paged_allocator.h:170)
+ERROR: Pages in use exist at exit in PagedAllocator: N12VariantPools12BucketMediumE
+   at: ~PagedAllocator (./core/templates/paged_allocator.h:170)
+ERROR: Pages in use exist at exit in PagedAllocator: N12VariantPools11BucketSmallE
+   at: ~PagedAllocator (./core/templates/paged_allocator.h:170)
+ERROR: 6 RID allocations of type '23NavMeshGeometryParser3D' were leaked at exit.
+ERROR: 7 RID allocations of type '23NavMeshGeometryParser2D' were leaked at exit.
+WARNING: A Thread object is being destroyed without its completion having been realized.
+Please call wait_to_finish() on it to ensure correct cleanup.
+     at: ~Thread (core/os/thread.cpp:116)
+ERROR: BUG: Unreferenced static string to 0: @warning_ignore_restore
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: @warning_ignore_start
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: @warning_ignore
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: @export_range
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: @export_multiline
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: @export
+   at: unref (core/string/string_name.cpp:133)
+ERROR: BUG: Unreferenced static string to 0: @icon
+   at: unref (core/string/string_name.cpp:133)
+ERROR: 1036 RID allocations of type 'PN13RichTextLabel4ItemE' were leaked at exit.

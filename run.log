@@ -1,0 +1,64 @@
+
+
+Openbox
+
+
+
+
+
+
+main.tscn - Jogo de Exemplo - GameProject
+
+
+
+
+
+
+captura 1: editor-3d
+captura 2: inspetor
+captura 3: editor-2d
+captura 4: editor-de-script
+captura 5: adicionar-no
+captura 6: menu-projeto
+captura 7: menu-editor
+captura 8: menu-ajuda
+captura 9: jogo-rodando
+
+
+
+Openbox
+
+
+
+
+
+
+main.tscn - Jogo de Exemplo - GameProject
+
+
+
+
+
+
+
+
+
+captura 10: gerenciador-de-projetos
+captura 11: criar-projeto
+total 2340
+drwxr-xr-x 2 runner runner   4096 out 12 12:46 .
+drwxr-xr-x 6 runner runner   4096 out 12 12:43 ..
+-rw-r--r-- 1 runner runner 302943 out 12 12:44 01-editor-3d.png
+-rw-r--r-- 1 runner runner 311863 out 12 12:45 02-inspetor.png
+-rw-r--r-- 1 runner runner 141232 out 12 12:45 03-editor-2d.png
+-rw-r--r-- 1 runner runner 157395 out 12 12:45 04-editor-de-script.png
+-rw-r--r-- 1 runner runner 200859 out 12 12:45 05-adicionar-no.png
+-rw-r--r-- 1 runner runner 268902 out 12 12:45 06-menu-projeto.png
+-rw-r--r-- 1 runner runner 266649 out 12 12:45 07-menu-editor.png
+-rw-r--r-- 1 runner runner 264092 out 12 12:45 08-menu-ajuda.png
+-rw-r--r-- 1 runner runner 243668 out 12 12:45 09-jogo-rodando.png
+-rw-r--r-- 1 runner runner  75708 out 12 12:46 10-gerenciador-de-projetos.png
+-rw-r--r-- 1 runner runner 114398 out 12 12:46 11-criar-projeto.png
+-rw-r--r-- 1 runner runner   6205 out 12 12:46 app.log
+-rw-r--r-- 1 runner runner    669 out 12 12:46 app-pm.log
+-rw-r--r-- 1 runner runner    401 out 12 12:46 run.log
